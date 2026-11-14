@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "es2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "esnext",
+    "types": ["vite/client"],
+    "allowArbitraryExtensions": true,
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "paths": {
+      "@routes": ["./src/app/routes/"],
+      "@layouts": ["./src/app/routes/"],
+      "@providers": ["./src/app/routes/"],
+      "@contexts": ["./src/shared/contexts/"],
+      "@types": ["./src/shared/types/"],
+      "@hooks": ["./src/shared/hooks/"],
+      "@utils": ["./src/shared/utils/"],
+      "@components": ["./src/shared/components/"],
+      "@styles": ["./src/shared/styles/"],
+    }
+  },
+  "include": ["src"]
+}
