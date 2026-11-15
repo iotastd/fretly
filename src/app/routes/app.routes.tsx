@@ -9,7 +9,7 @@ export const appRoutes = createBrowserRouter([
                 path: "/",
                 element: "AppLayout",
                 children: featureRoutes,
-            }
-        ]
-    }
+            },
+        ],
+    },
 ]);

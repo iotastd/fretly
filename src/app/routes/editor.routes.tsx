@@ -3,7 +3,7 @@ import type { RouteObject } from "react-router";
 export const editorRoutes: RouteObject[] = [
     {
         index: true,
-        element: "EditorHomePage",
+        element: "EditorMainPage",
     },
     {
         path: "./settings",
