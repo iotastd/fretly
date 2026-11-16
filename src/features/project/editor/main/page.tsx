@@ -1,7 +1,7 @@
 import { PageHeader } from "@components";
 
 export function EditorMainPage() {
-    return (
+    return(
         <main className="page-editor-main">
             <PageHeader label="" />
         </main>

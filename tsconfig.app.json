@@ -25,10 +25,11 @@
     /* Paths */
     "paths": {
       "@routes": ["./src/app/routes/"],
-      "@layouts": ["./src/app/routes/"],
-      "@providers": ["./src/app/routes/"],
+      "@layouts": ["./src/app/layouts"],
+      "@providers": ["./src/app/providers"],
       "@contexts": ["./src/shared/contexts/"],
       "@types": ["./src/shared/types/"],
+      "@features": ["./src/features/"],
       "@hooks": ["./src/shared/hooks/"],
       "@utils": ["./src/shared/utils/"],
       "@components": ["./src/shared/components/"],

@@ -1,9 +1,10 @@
+import { UserProfilePage } from "@features";
 import type { RouteObject } from "react-router";
 
 export const userRoutes: RouteObject[] = [
     {
         index: true,
-        element: "UserProfilePage",
+        element: <UserProfilePage />,
     },
     {
         path: "./edit",

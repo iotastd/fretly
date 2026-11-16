@@ -1,8 +1,8 @@
 import { PageHeader } from "@components";
 
-export function ProjectsPage() {
-    return (
-        <main className="page-projects">
+export function ProjectListPage() {
+    return(
+        <main className="page-project-list">
             <PageHeader label="My projects" />
         </main>
     );

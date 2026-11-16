@@ -1,13 +1,14 @@
+import { EditorMainPage, EditorSettngsLayout } from "@features";
 import type { RouteObject } from "react-router";
 
 export const editorRoutes: RouteObject[] = [
     {
         index: true,
-        element: "EditorMainPage",
+        element: <EditorMainPage />,
     },
     {
         path: "./settings",
-        element: "EditorLayout",
+        element: <EditorSettngsLayout />,
         children: [
             {
                 path: "./",
