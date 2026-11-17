@@ -3,8 +3,8 @@ import type { RouteObject } from "react-router";
 
 export const editorRoutes: RouteObject[] = [
     {
-        index: true,
-        element: <EditorMainPage />,
+        path: "./",
+        element: <EditorMainPage />
     },
     {
         path: "./settings",
@@ -12,16 +12,8 @@ export const editorRoutes: RouteObject[] = [
         children: [
             {
                 path: "./",
-                element: "EditorSettingsOverviewPage",
-            },
-            {
-                path: "./prefrences",
-                element: "EditorPrefrencesSettingsPage",
-            },
-            {
-                path: "./shortcuts",
-                element: "EditorShortcutsSettingsPage",
-            },
-        ],
-    },
+                element: "EditorSettingsOverviewPage"
+            }
+        ]
+    }
 ];

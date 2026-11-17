@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 
-export function UserSettngsLayout() {
+export function UserSettingsLayout() {
     return(
         <>
         <Outlet />

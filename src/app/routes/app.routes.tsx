@@ -1,21 +1,28 @@
 import { createBrowserRouter } from "react-router";
-import { featureRoutes, userRoutes } from "@routes";
 import { AppProvider } from "@providers";
+import { authRoutes, featureRoutes } from "@routes";
 import { AppLayout } from "@layouts";
+import { AuthLayout } from "@features";
 
 export const appRoutes = createBrowserRouter([
     {
+        path: "/",
         element: <AppProvider />,
         children: [
             {
-                path: "/",
-                element: <AppLayout />,
-                children: featureRoutes,
+                index: true,
+                element: "LandingPage"
             },
             {
-                path: "/user/:username/settings",
-                children: userRoutes,
+                path: "/",
+                children: featureRoutes,
+                element: <AppLayout />
+            },
+            {
+                path: "/auth",
+                children: authRoutes,
+                element: <AuthLayout />
             }
-        ],
-    },
+        ]
+    }
 ]);

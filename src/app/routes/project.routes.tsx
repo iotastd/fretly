@@ -1,16 +1,25 @@
-import type { RouteObject } from "react-router";
-import { editorRoutes } from "@routes";
-import { ProjectViewPage } from "@features";
+import { ProjectListPage, ProjectViewPage } from "@features";
 import { EditorProvider } from "@providers";
+import { editorRoutes } from "./editor.routes";
+import type { RouteObject } from "react-router";
 
 export const projectRoutes: RouteObject[] = [
     {
-        index: true,
-        element: <ProjectViewPage />,
+        path: "./",
+        element: <ProjectListPage />
     },
     {
-        path: "./edit",
-        element: <EditorProvider />,
-        children: editorRoutes,
-    },
+        path: "./:projectId",
+        children: [
+            {
+                path: "./",
+                element: <ProjectViewPage />
+            },
+            {
+                path: "./edit",
+                children: editorRoutes,
+                element: <EditorProvider />
+            }
+        ]
+    }
 ];

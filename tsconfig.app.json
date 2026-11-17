@@ -36,5 +36,5 @@
       "@styles": ["./src/shared/styles/"],
     }
   },
-  "include": ["src"]
+  "include": ["src", "archive/old-routes"]
 }

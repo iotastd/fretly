@@ -1,8 +1,8 @@
 import { PageHeader } from "@components";
 
-export function UserProfilePage() {
+export function UserProfileViewPage() {
     return(
-        <main className="page-user-profile">
+        <main className="page-user-profile-view">
             <PageHeader label="My profile" />
         </main>
     );

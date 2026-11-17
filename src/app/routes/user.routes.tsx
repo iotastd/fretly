@@ -1,35 +1,23 @@
-import { UserProfilePage } from "@features";
+import { UserProfileEditPage, UserProfileViewPage, UserSettingsLayout } from "@features";
 import type { RouteObject } from "react-router";
 
 export const userRoutes: RouteObject[] = [
     {
-        index: true,
-        element: <UserProfilePage />,
+        path: "./",
+        element: <UserProfileViewPage />
     },
     {
         path: "./edit",
-        element: "UserEditPage",
+        element: <UserProfileEditPage />
     },
     {
         path: "./settings",
-        element: "UserSettingsLayout",
+        element: <UserSettingsLayout />,
         children: [
             {
-                index: true,
-                element: "UserSettingsOverview",
-            },
-            {
-                path: "./security",
-                element: "UserSettingsSecurity",
-            },
-            {
                 path: "./",
-                element: "UserSettingsPrivacy",
-            },
-            {
-                path: "./privacy",
-                element: "UserSettingsPrivacy",
-            },
-        ],
-    },
+                element: "UserSettingsOverviewPage"
+            }
+        ]
+    }
 ];
